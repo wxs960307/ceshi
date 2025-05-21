@@ -85,8 +85,8 @@ function build_project() {
 
 # ========= 生成钱包 =========
 function generate_wallet() {
-  cd "$NCK_DIR" || exit 1
-  echo 'export PATH="$PATH:$HOME/nockchain/target/release"' 
+  #cd "$NCK_DIR" || exit 1
+  cd "$NCK_DIR"& export PATH="$PATH:$HOME/nockchain/target/release"
   echo -e "[*] 创建钱包..."
   nockchain-wallet keygen
   echo 'nano Makefile' 
