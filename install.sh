@@ -88,7 +88,7 @@ function generate_wallet() {
   echo 'export PATH="$PATH:$HOME/nockchain/target/release"' 
   cd "$NCK_DIR" || exit 1
   echo -e "[*] 创建钱包..."
-  echo 'nockchain-wallet keygen' 
+  nockchain-wallet keygen
   echo 'nano Makefile' 
   echo -e "${GREEN}[+] 钱包生成完成,请将您的钱包替换公钥。${RESET}"
   pause_and_return
