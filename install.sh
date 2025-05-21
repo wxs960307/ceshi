@@ -58,7 +58,8 @@ function setup_repository() {
       cd "$NCK_DIR" && git pull
     fi
   else
-    git clone https://github.com/zorp-corp/nockchain "$NCK_DIR"
+    git clone https://github.com/zorp-corp/nockchain 
+	cd "$NCK_DIR"
   fi
   echo -e "${GREEN}[+] 仓库设置完成。${RESET}"
   pause_and_return
